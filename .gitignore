@@ -1,0 +1,56 @@
+# Ignore object files, compiled libraries, and executable files
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+
+# Ignore build directories
+/build/
+/bin/
+/out/
+/Debug/
+/Release/
+
+# Ignore IDE and editor-specific files
+*.vscode/
+*.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.class
+*.DS_Store
+*.directory
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.bak
+*.old
+*.swp
+*.cache
+
+# Ignore generated files
+*.gch
+*.pch
+Makefile
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# Ignore other system files
+Thumbs.db
+desktop.ini
+
+# Ignore custom files
+*.iml
+*.user
+*.ncb
+*.suo
+*.pdb
+*.idb
+*.opendb
+*.tlog

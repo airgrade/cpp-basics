@@ -24,7 +24,7 @@ int main(){
     cin >> thirdScore;
 
     // avg score calculation
-    double avgScore = (firstScore + secondScore + thirdScore) / 3;
+    int avgScore = (firstScore + secondScore + thirdScore) / 3;
 
     cout << "Your average score is: " << avgScore <<endl;
 

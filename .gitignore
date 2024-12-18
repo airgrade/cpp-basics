@@ -54,3 +54,5 @@ desktop.ini
 *.idb
 *.opendb
 *.tlog
+cpp_basics
+cpp_basics.pub

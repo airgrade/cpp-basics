@@ -1,0 +1,21 @@
+Create a group of words
+Pick a random word from the group as the secret word
+while player hasn't made too many incorrect guesses and hasn't guessed the secret word
+
+tell a player how many incorrect guesses he or she has left
+show player the letters he or she has guessed
+
+Show player how much of the secret word he or she has already guessed
+    get player's guess
+Add the new guess to the group of used letters
+if the guess is in the secret word
+    Tell the player the guess is correct
+    Update the word guessed so far with the new letters
+Otherwise
+    Tell the player the guess is incorrect
+    Increment the number of incorrect guesses the player has made
+
+If the player has made too many incorrect guesses
+    Tell the player that he or she has been hanged
+Otherwise
+    Congratulate the player on guessing the secret word

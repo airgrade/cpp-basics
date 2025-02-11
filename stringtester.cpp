@@ -21,5 +21,11 @@ int main(){
     phrase[0] = 'L';
 
     cout << "The phrase is now: " << phrase << "\n\n";
+    for (unsigned int i = 0; i < phrase.size();++i){
+        cout << "Character at position " << i << " is: " << phrase[i]<< endl;
+    }
+    cout << "\nThe sequence 'Over' begins at location ";
+    cout << phrase.find("Over") << endl;
+
 
 }

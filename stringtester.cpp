@@ -27,5 +27,23 @@ int main(){
     cout << "\nThe sequence 'Over' begins at location ";
     cout << phrase.find("Over") << endl;
 
+    if (phrase.find("eggplant") == string::npos){
+        cout << "'eggplant' is not in the phrase.\n\n";
+    }
+    phrase.erase(4,5);
+    cout << "The phrase is now: " << phrase << endl;
+
+    phrase.erase(4);
+    cout << "The phrase is now: " << phrase << endl;
+
+    phrase.erase();
+    cout << "The phrase is now: " << phrase << endl;
+
+    if (phrase.empty()){
+        cout << "The phrase is no more.\n\n";
+    }
+    
+    return 0;
+
 
 }

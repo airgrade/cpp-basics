@@ -43,12 +43,12 @@ int main(){
         cout << "\n\nEnter your guess: ";
         cin >> guess;
         guess = toupper(guess); // make uppercase since secret word is in uppercase
-        
+
         while (used.find(guess) != string::npos){
             cout << "\nYou've already guessed " << guess << endl;
             cout << "Enter your guess: ";
             cin >> guess;
-            guess = toupper(guess);        
+            guess = toupper(guess);
         }
 
         used += guess;
@@ -78,6 +78,6 @@ int main(){
     }
 
     cout << "\nThe word was "<< THE_WORD << endl;
-    
+
     return 0;
 }

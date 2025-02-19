@@ -14,7 +14,7 @@ int main()
     //Picking a word to jumble
     enum fields {WORD, HINT, NUM_FIELD};
     const int NUM_WORDS = 5;
-    const string WORDS[NUM_WORDS][NUM_FIELDS] = 
+    const string WORDS[NUM_WORDS][NUM_FIELD] = 
     {
         {"wall","Do you feel you're banging your head against something?"},
         {"glasses","This might help you see the answer."},
@@ -41,4 +41,39 @@ int main()
         jumble[index2] = temp;
     }
     
+    //Welcoming the player
+    cout << "\t\tWelcome to the word jumble\n\n";
+    cout << "Uncramble the letters to make a word.\n";
+    cout << "Enter 'hint'for a hint.\n";
+    cout << "Enter 'quit' to quit the game.\n\n";
+    cout << "The jumble is: " << jumble;
+
+    string guess;
+    cout << "\n\nYour guess: ";
+    cin >> guess;
+
+    //Starting the game loop
+    while ((guess != theWord) && (guess != "quit"))
+    {
+        if (guess == "hint")
+        {
+            cout << theHint;
+        }
+        else
+        {
+            cout << "Sorry that is not it.";
+        }
+        
+        cout << "\n\nYour guess: ";
+        cin >> guess;
+
+    }
+
+    if (guess == theWord)
+    {
+        cout << "\nThat's it! You guessed it!\n";
+    }
+
+    cout << "Thanks for playing.\n";
+    return 0;
 }

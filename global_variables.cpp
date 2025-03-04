@@ -17,6 +17,9 @@ int main(){
 
     hide_global();
     cout << "In main() glob is: " << glob << "\n\n";
+
+    change_global();
+    cout << "In main() glob is: " << glob << "\n\n";
     return 0;
 }
 
